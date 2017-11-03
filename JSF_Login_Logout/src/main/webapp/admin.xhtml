@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Facelet Title</title>
+</h:head>
+<h:body>
+	<h:form>
+		<p>Welcome #{login.user}</p>
+                <p><h:commandLink action="#{login.logout}" value="Logout"></h:commandLink></p>
+                <p><h:commandButton action="#{viewUsers.listUsers()}" value="List Users"></h:commandButton></p>
+                <p><h:commandButton action="#{scores.getScores()}" value="Scores"></h:commandButton></p>
+	</h:form>
+</h:body>
+</html>
